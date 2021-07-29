@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+---
+title: Examples
+---
 
-You can use the [editor on GitHub](https://github.com/anbumca/vue-star-ratings/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Basic
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+No options configured, 10 slides added to the carousel.
 
-### Markdown
+<script async src="//jsfiddle.net/toddlawton/2bxwyg8g/embed/result,js/"></script>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Responsive
 
-```markdown
-Syntax highlighted code block
+Configured breakpoints: 2 slides on mobile (<= 480px), 3 slides on tablet (<= 768).
+**Note: in a JSFiddle iframe, the breakpoint is determined by the iframe's width.**
 
-# Header 1
-## Header 2
-### Header 3
+<script async src="//jsfiddle.net/quinnssense/bojn4dz4/embed/js,result/"></script>
 
-- Bulleted
-- List
+## Scroll per page
 
-1. Numbered
-2. List
+Instead of scrolling on a per item basis, the carousel will scroll the configured [perPage](/vue-carousel/api#perPage) with each movement.
 
-**Bold** and _Italic_ and `Code` text
+<script async src="//jsfiddle.net/toddlawton/6ckc1pqv/embed/result,js/"></script>
 
-[Link](url) and ![Image](src)
-```
+## Scroll per page (custom)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Instead of scrolling on a per item basis, the carousel will scroll the configured by [perPageCustom](/vue-carousel/api#perPageCustom) with each movement.
 
-### Jekyll Themes
+<script async src="//jsfiddle.net/quinnssense/gjr7wbph/1/embed/"></script></script>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anbumca/vue-star-ratings/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Autoplay
 
-### Support or Contact
+The carousel will auto-advance slides unless the carousel is hovered upon.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<script async src="//jsfiddle.net/toddlawton/n1argwgg/embed/result,js/"></script>
+
+## Autoplay infinite loop
+
+The carousel will auto-play and loop when reaching the end.
+
+<script async src="//jsfiddle.net/kpkrmx2k/3/embed/result,js/"></script>
+
+## Navigation
+
+Buttons added to advance the carousel in either direction.
+
+<script async src="//jsfiddle.net/toddlawton/46wegz8a/embed/result,js/"></script>
+
+## Customized
+
+Customized pagination dot colors and sizes. Customized speed and easing.
+
+<script async src="//jsfiddle.net/toddlawton/ycp9bwhp/embed/result,js/"></script>
+
+<style type="text/css">iframe { max-height: 230px; }</style>
